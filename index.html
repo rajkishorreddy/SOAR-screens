@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/logo2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Roboto', sans-serif; -->
+    <title>SOAR</title>
+  </head>
+  <body>
+    <section class="header">
+      <div class="header-navigation">
+        <div class="header-navigation-branding">
+          <img
+            src="img/logo2.png"
+            alt="Brand Logo"
+            class="header-navigation-branding-logo"
+          />
+          <h2 class="hader-navigation-branding-txt">NeverMind!</h2>
+        </div>
+        <nav class="header-navigation-nav">
+          <a href="#" class="header-navigation-nav-item">HOMEPAGE</a>
+          <a href="#" class="header-navigation-nav-item">DASHBOARDS</a>
+          <a href="#" class="header-navigation-nav-item">CASES</a>
+          <a href="#" class="header-navigation-nav-item">PLAYBOOKS</a>
+          <a href="#" class="header-navigation-nav-item">SEARCH</a>
+          <a href="#" class="header-navigation-nav-item">REPORTS</a>
+          <a href="#" class="header-navigation-nav-item">COMMAND CENTER</a>
+        </nav>
+      </div>
+      <nav class="header-logonav">
+        <a href="#">
+          <svg class="header-logonav-item">
+            <use xlink:href="/img/sprite.svg#icon-map2"></use>
+          </svg>
+        </a>
+        <a href="#"
+          ><svg class="header-logonav-item">
+            <use xlink:href="/img/sprite.svg#icon-paragraph-left"></use></svg
+        ></a>
+        <a href="#"
+          ><svg class="header-logonav-item">
+            <use xlink:href="/img/sprite.svg#icon-question-mark"></use></svg
+        ></a>
+        <a href="#">
+          <svg class="header-logonav-item">
+            <use xlink:href="/img/sprite.svg#icon-cog"></use>
+          </svg>
+        </a>
+        <a href="#">
+          <svg class="header-logonav-item">
+            <use xlink:href="/img/sprite.svg#icon-bell"></use></svg
+        ></a>
+        <span class="header-logonav-notification">+99</span>
+        <img
+          src="img/user-6.jpg"
+          alt="profile pic"
+          class="header-logonav-person"
+        />
+      </nav>
+    </section>
+    <main class="body">
+      <section class="sidebar-left">
+        <div class="case-info">
+          <h3 class="case-info-count">12 cases</h3>
+          <div class="case-info-settings">
+            <svg class="case-info-settings-item">
+              <use xlink:href="/img/sprite.svg#icon-refresh"></use>
+            </svg>
+            <svg class="case-info-settings-item">
+              <use xlink:href="/img/sprite.svg#icon-filter"></use>
+            </svg>
+            <svg class="case-info-settings-item">
+              <use xlink:href="/img/sprite.svg#icon-plus"></use>
+            </svg>
+          </div>
+          <div class="case-info-sort">
+            <svg class="case-info-sort-item">
+              <use xlink:href="/img/sprite.svg#icon-lab-flask"></use>
+            </svg>
+            <svg class="case-info-sort-item">
+              <use xlink:href="/img/sprite.svg#icon-arrow-up2"></use>
+            </svg>
+          </div>
+          <h3 class="case-info-pagecount">1-9</h3>
+        </div>
+        <!-- <div class="case-item">
+            <img src="img/DE.svg" alt="logo" class="case-item-logo" />
+            <h2 class="case-item-heading">IP ALERT</h2>
+            <p class="case-item-modified">
+              Modified
+              <span class="case-item-modified-date"
+                >2020-10-09 15:45:58 ID 31389</span
+              >
+            </p>
+            <div class="case-item-marker1">
+              <span class="case-item-marker1-mark mark-red"></span>
+              <img
+                src="img/network.svg"
+                alt="logo marker"
+                class="case-item-marker1-mark rotate"
+              />
+            </div>
+            <svg class="case-item-options">
+              <use xlink:href="/img/sprite.svg#icon-dots-horizontal-triple"></use>
+            </svg>
+  
+            <div class="case-item-marker2">
+              <svg class="case-item-marker2-mark-svg">
+                <use xlink:href="/img/sprite.svg#icon-svg"></use>
+              </svg>
+              <span class="case-item-marker2-mark case-item-marker2-mark-no"
+                >1</span
+              >
+              <img
+                src="img/user-6.jpg"
+                alt="user logo"
+                class="case-item-marker2-mark case-item-marker2-mark-img"
+              />
+            </div>
+          </div>-->
+      </section>
+      <section class="main">
+        <div class="about-case">
+          <img src="img/user-4.jpg" alt="user logo" / class="about-case-img">
+          <span class="about-case-person">
+            <a href="#" class="about-case-name">Jonas plank</a>
+            <a href="#" class="about-case-assign">Assign to me</a>
+          </span>
+          <a href="#" class="about-case-btn">
+            <svg class="about-case-btn-svg">
+              <use xlink:href="/img/sprite.svg#icon-cheveron-down"></use>
+            </svg>
+          </a>
+          <span class="about-case-titletag">
+            <span class="about-case-title">IP ALERT</span>
+            <a href="#" class="about-case-tags">+Tags</a>
+          </span>
+          <p class="about-case-info">
+            ID 31389 | Modified 2020-10-09 15:45:58 | Stage:Triage Environment:
+            Default..
+          </p>
+          <button class="about-case-adddis">Add case description</button>
+        </div>
+        <nav class="case-nav">
+          <a href="#" class="case-nav-item">Overview</a>
+          <a href="#" class="case-nav-item">Case Wall</a>
+          <a href="#" class="case-nav-item">Events</a>
+        </nav>
+        <div class="alerts">
+          <div class="alerts-heading">
+            <svg class="alerts-heading-svg">
+              <use xlink:href="/img/sprite.svg#icon-flag"></use>
+            </svg>
+            <h2 class="alerts-heading-text">Alerts <span> (2)</span></h2>
+          </div>
+          <div class="alerts-container">
+            <div class="alerts-item">
+              <span class="alerts-item-heading">IP ALERT</span>
+              <span class="alerts-item-time">2020-10-09 14:03:05</span>
+              <span class="alerts-item-events">1 Events</span>
+              <img
+                src="img/network.svg"
+                alt="playbook"
+                class="alerts-item-svg"
+              />
+            </div>
+            <div class="alerts-item">
+              <span class="alerts-item-heading">IP ALERT</span>
+              <span class="alerts-item-time">2020-10-09 14:11:05</span>
+              <span class="alerts-item-events">1 Events</span>
+              <img
+                src="img/network.svg"
+                alt="playbook"
+                class="alerts-item-svg"
+              />
+            </div>
+          </div>
+          <div class="alerts-graph">
+            <p class="alerts-graph-date">2020-10-09 14:03:05</p>
+            <div class="alerts-graph-day">
+              <span>wed 7</span>
+              <span>Thu 8</span>
+              <span>Fri 9</span>
+              <span>Sat 10</span>
+              <span>Sun 11</span>
+              <span>Mon 12</span>
+            </div>
+          </div>
+        </div>
+        <div class="insight">
+          <div class="insight-heading">
+            <svg class="insight-heading-svg">
+              <use xlink:href="/img/sprite.svg#icon-light-bulb"></use>
+            </svg>
+            <h2 class="insight-heading-title">Insight <span> (4)</span></h2>
+            <div class="insight-heading-filter">
+              <svg class="insight-heading-filter-svg">
+                <use xlink:href="/img/sprite.svg#icon-filter"></use>
+              </svg>
+              <svg class="insight-heading-filter-svg">
+                <use xlink:href="/img/sprite.svg#icon-plus"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="container">
+            <div class="container-item">
+              <div class="container-item-heading">
+                <svg class="container-item-heading-svg">
+                  <use xlink:href="/img/sprite.svg#icon-shield"></use>
+                </svg>
+                <span class="container-item-heading-title">NeverMind</span>
+                <svg
+                  class="container-item-heading-svg container-item-heading-svg2"
+                >
+                  <use xlink:href="/img/sprite.svg#icon-enlarge2"></use>
+                </svg>
+              </div>
+              <div class="container-item-data">
+                <div class="container-item-data-title">
+                  <img
+                    src="img/hash.svg"
+                    alt="logo"
+                    class="container-item-data-title-logo"
+                  />
+                  <span class="container-item-data-title-txt"
+                    >54487244E84BF142537A4E11</span
+                  >
+                </div>
+              </div>
+              <span class="container-item-data-txt">
+                SandBlast Result Information <br />Signature Name:Malicious<br />
+                Binary.TV.jjcmsb Malware Falily:304776<br />
+                confidence: N/A<br />
+                severity:N/A SandBlast Result Information Signature<br />
+                Name:Malicious Binary.TV.jjcmsb<br />
+                Malware Falily:304776<br />
+              </span>
+            </div>
+            <div class="container-item">
+              <div class="container-item-heading">
+                <svg class="container-item-heading-svg">
+                  <use xlink:href="/img/sprite.svg#icon-laptop"></use>
+                </svg>
+                <span class="container-item-heading-title"
+                  >CheckPointThreatReputation</span
+                >
+                <svg
+                  class="container-item-heading-svg container-item-heading-svg2"
+                >
+                  <use xlink:href="/img/sprite.svg#icon-enlarge2"></use>
+                </svg>
+              </div>
+              <div class="container-item-data">
+                <div class="container-item-data-title">
+                  <img
+                    src="img/IPBLUE.SVG"
+                    alt="logo"
+                    class="container-item-data-title-logo"
+                  />
+                  <span class="container-item-data-title-txt">10.0.2.102</span>
+                </div>
+              </div>
+              <span class="container-item-data-txt">
+                classification: Unclasified <br />
+                confidence: N/A<br />
+                severity:N/A <br />
+                SandBlast Result Information Signature<br />
+                SandBlast Result Information <br />Signature Name:Malicious<br />
+                Binary.TV.jjcmsb Malware Falily:304776<br />
+                confidence: N/A<br />
+              </span>
+            </div>
+            <div class="container-item">
+              <div class="container-item-heading">
+                <svg class="container-item-heading-svg">
+                  <use xlink:href="/img/sprite.svg#icon-bug"></use>
+                </svg>
+                <span class="container-item-heading-title">VirusTotal</span>
+                <svg
+                  class="container-item-heading-svg container-item-heading-svg2"
+                >
+                  <use xlink:href="/img/sprite.svg#icon-enlarge2"></use>
+                </svg>
+              </div>
+              <div class="container-item-data">
+                <div class="container-item-data-title">
+                  <img
+                    src="img/hash.svg"
+                    alt="logo"
+                    class="container-item-data-title-logo"
+                  />
+                  <span class="container-item-data-title-txt"
+                    >54487244E84BF142444ET562</span
+                  >
+                </div>
+              </div>
+              <span class="container-item-data-txt">
+                virusTotal-Hash was marked as malicious by 55 of 70
+                engines.Threshold set to 0 <br />SandBlast Result Information
+                <br />Signature Name:Malicious<br />
+                Binary.TV.jjcmsb Malware Falily:304776<br />
+                confidence: N/A<br />
+                severity:N/A SandBlast Result Information Signature<br />
+                Name:Malicious Binary.TV.jjcmsb<br />
+                Malware Falily:304776<br />
+              </span>
+            </div>
+            <div class="container-item">
+              <div class="container-item-heading">
+                <svg class="container-item-heading-svg">
+                  <use xlink:href="/img/sprite.svg#icon-laptop"></use>
+                </svg>
+                <span class="container-item-heading-title"
+                  >CheckPointThreatReputation</span
+                >
+                <svg
+                  class="container-item-heading-svg container-item-heading-svg2"
+                >
+                  <use xlink:href="/img/sprite.svg#icon-enlarge2"></use>
+                </svg>
+              </div>
+              <div class="container-item-data">
+                <div class="container-item-data-title">
+                  <img
+                    src="img/IPRED.SVG"
+                    alt="logo"
+                    class="container-item-data-title-logo"
+                  />
+                  <span class="container-item-data-title-txt"
+                    >185.220.101.207</span
+                  >
+                </div>
+              </div>
+              <span class="container-item-data-txt">
+                classification:Anonymizer <br />
+                confidence: High <br />
+                severity: Medium <br />
+                SandBlast Result Information <br />Signature Name:Malicious<br />
+                Binary.TV.jjcmsb Malware Falily:304776<br />
+                confidence: N/A<br />
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="playbook">
+          <div class="playbook-heading">
+            <img
+              src="img/network.svg"
+              alt="playbook logo"
+              class="playbook-heading-logo"
+            />
+            <span class="playbook-heading-title"
+              >Playbooks <span>(0)</span></span
+            >
+          </div>
+          <div class="alert-graph-djs"><div id="my_dataviz"></div></div>
+          <!-- <div class="playbook-data">
+            <p class="playbook-data-txt">
+              Select an alert to present relevant playbooks
+            </p>
+          </div> -->
+        </div>
+      </section>
+      <section class="sidebar-right">
+        <nav class="options-nav">
+          <a href="#"
+            ><svg class="options-nav-item">
+              <use xlink:href="/img/sprite.svg#icon-refresh"></use></svg
+          ></a>
+          <a href="#"
+            ><svg class="options-nav-item">
+              <use xlink:href="/img/sprite.svg#icon-folder"></use></svg
+          ></a>
+          <a href="#"
+            ><svg class="options-nav-item">
+              <use xlink:href="/img/sprite.svg#icon-list2"></use></svg
+          ></a>
+          <button class="options-nav-button">
+            <svg class="options-nav-button-item">
+              <use xlink:href="/img/sprite.svg#icon-svg"></use>
+            </svg>
+            Explore
+          </button>
+        </nav>
+        <div class="folder">
+          <svg class="folder-logo">
+            <use xlink:href="/img/sprite.svg#icon-folder"></use>
+          </svg>
+          <span class="folder-info">
+            <span class="folder-case">Case</span>
+            <span class="folder-case-title">IP ALERT</span>
+          </span>
+        </div>
+        <form action="#" class="search">
+          <label for="search-input"
+            ><svg class="search-logo">
+              <use xlink:href="/img/sprite.svg#icon-search"></use></svg
+          ></label>
+          <input
+            id="search-input"
+            type="text"
+            class="search-input"
+            placeholder="Search.."
+          />
+          <div class="search-extend">
+            <svg class="search-extend-logo">
+              <use xlink:href="/img/sprite.svg#icon-cheveron-down"></use>
+            </svg>
+            <svg class="search-extend-logo">
+              <use xlink:href="/img/sprite.svg#icon-cheveron-up"></use>
+            </svg>
+          </div>
+        </form>
+        <div class="entities">
+          <div class="entities-heading">
+            <span class="flex-row">
+              <img
+                src="img/e.svg"
+                alt="entities logo"
+                class="entities-heading-logo"
+              />
+              <h1 class="entities-heading-text">Entities</h1></span
+            >
+            <svg class="entities-heading-btn">
+              <use xlink:href="/img/sprite.svg#icon-cheveron-up"></use>
+            </svg>
+          </div>
+          <div class="entities-data">
+            <div class="entities-data-item">
+              <img
+                src="img/IPRED.SVG"
+                alt="ip red"
+                class="entities-data-item-logo"
+              />
+              <svg class="entities-data-item-left">
+                <use xlink:href="/img/sprite.svg#icon-arrow-left2"></use>
+              </svg>
+              <p class="entities-data-item-txt">185.220.101.207</p>
+            </div>
+            <div class="entities-data-item">
+              <img
+                src="img/hash.svg"
+                alt="# red"
+                class="entities-data-item-logo"
+              />
+              <p class="entities-data-item-txt">54487244E84BF142537A4E11</p>
+            </div>
+            <div class="entities-data-item">
+              <img
+                src="img/IPBLUE.SVG"
+                alt="ip blue"
+                class="entities-data-item-logo"
+              />
+              <svg class="entities-data-item-left">
+                <use xlink:href="/img/sprite.svg#icon-arrow-right2"></use>
+              </svg>
+              <p class="entities-data-item-txt">10.0.2.102</p>
+            </div>
+          </div>
+        </div>
+        <div class="summary">
+          <div class="summary-heading">
+            <span class="flex-row">
+              <svg class="summary-heading-logo">
+                <use xlink:href="/img/sprite.svg#icon-paragraph-left"></use>
+              </svg>
+              <h2 class="summary-heading-text">Summary</h2>
+            </span>
+            <svg class="entities-heading-btn">
+              <use xlink:href="/img/sprite.svg#icon-cheveron-up"></use>
+            </svg>
+          </div>
+          <div class="summary-item">
+            <h2 class="summary-item-heading">Device Product</h2>
+            <p class="summary-item-data">Correlation</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

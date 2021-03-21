@@ -1,0 +1,58 @@
+.header {
+  background: $background-Color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5vh;
+  &-navigation {
+    display: flex;
+    align-items: center;
+
+    &-branding {
+      display: flex;
+      align-items: center;
+      margin: 0 2rem 0 1rem;
+      &-logo {
+        height: 2rem;
+      }
+      &-txt {
+      }
+    }
+    &-nav {
+      display: flex;
+      align-items: center;
+      &-item {
+        text-decoration: none;
+        margin-right: 2rem;
+        color: inherit;
+        transition: all 0.5s;
+      }
+    }
+  }
+  &-logonav {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    &-item {
+      fill: $svg-Color;
+      height: 1.5rem;
+      width: 3.5rem;
+    }
+    &-notification {
+      position: absolute;
+      right: 4rem;
+      top: 0;
+      background-color: #33f;
+      padding: 0 2px 0 2px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 0.7rem;
+      width: 2rem;
+      font-weight: 400;
+    }
+    &-person {
+      height: 3rem;
+      border-radius: 50%;
+    }
+  }
+}

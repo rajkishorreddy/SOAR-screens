@@ -1,0 +1,624 @@
+@import "variables";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 63.5%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: $text-Color;
+}
+//header
+@import "header";
+
+//body
+.body {
+  display: flex;
+  color: $bodytext-color;
+  .sidebar-left {
+    width: 19vw;
+    background: $sidebar-Color;
+    height: 95vh;
+    .case-info {
+      position: relative;
+      height: 8.6vh;
+      border-bottom: #111 1px solid;
+      &-count {
+        margin-top: 0.5rem;
+        font-weight: 400;
+      }
+      &-settings {
+        position: absolute;
+        top: 0.5rem;
+        right: 0;
+        display: flex;
+        align-items: center;
+        &-item {
+          fill: $svg-Color;
+          height: 1.3rem;
+          width: 2rem;
+          margin-right: 0.5rem;
+          cursor: pointer;
+        }
+      }
+      &-sort {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin-bottom: 1rem;
+        &-item {
+          fill: $svg-Color;
+          height: 1rem;
+          width: 1rem;
+          cursor: pointer;
+        }
+      }
+      &-pagecount {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 0 1rem 0.5rem 0;
+      }
+    }
+    .case-item {
+      position: relative;
+      height: 9.5vh;
+      border-bottom: #191919 2px solid;
+      border-left: 3px solid orange;
+
+      &-options {
+        position: absolute;
+        top: 0.5rem;
+        right: 0;
+        height: 1.5rem;
+        width: 1.5rem;
+        fill: $svg-Color;
+      }
+      &-logo {
+        height: 1.5rem;
+        width: 1.5rem;
+        position: absolute;
+        top: 1rem;
+        left: 0.5rem;
+      }
+      &-heading {
+        position: absolute;
+        font-size: 1.2rem;
+        top: 0.5rem;
+        left: 2.8rem;
+        font-weight: 500;
+        font-size: 1rem;
+      }
+      &-modified {
+        position: absolute;
+        top: 2rem;
+        left: 2.8rem;
+        font-weight: 100;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+      }
+      &-marker1 {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 0.5rem;
+        &-mark {
+          height: 0.6rem;
+          width: 0.6rem;
+          margin-left: 0.5rem;
+        }
+      }
+      &-marker2 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        &-mark {
+          height: 1.5rem;
+          width: 1.5rem;
+          margin-left: 0.5rem;
+
+          &-svg {
+            height: 1rem !important;
+            width: 1rem !important;
+            margin-left: 0.5rem;
+            fill: #333;
+          }
+          &-no {
+            background-color: $mainbody-Color;
+            text-align: center;
+            border-radius: 50%;
+          }
+          &-img {
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+  .sidebar-right {
+    width: 16vw;
+    background: $sidebar-Color;
+    height: 95vh;
+    overflow: hidden;
+    .options {
+      &-nav {
+        height: 8.6vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        &-item {
+          height: 1.3rem;
+          width: 3rem;
+          fill: $svg-Color;
+        }
+        &-button {
+          position: absolute;
+          border: none;
+          background: #33f;
+          text-align: center;
+          padding: 0.5rem 1rem 0.5rem 1rem;
+          border-radius: 50px;
+          right: 1rem;
+          color: inherit;
+          &-item {
+            fill: $text-Color;
+            height: 1rem;
+            width: 1rem;
+          }
+        }
+      }
+    }
+    .folder {
+      display: flex;
+      align-items: center;
+      &-info {
+        margin: 0.7rem 0 0 1rem;
+        display: flex;
+        flex-direction: column;
+      }
+      &-logo {
+        height: 3.5rem;
+        width: 3.5rem;
+        fill: #c3c3c3;
+        margin-left: 2rem;
+      }
+      &-case {
+        font-size: 1.2rem;
+        &-title {
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .search {
+      position: relative;
+      background-color: $mainbody-Color;
+      width: 100%;
+      height: 3rem;
+      border-left: 3px solid $sidebar-Color;
+      &-logo {
+        position: absolute;
+        top: 8px;
+        left: 0;
+        height: 1.5rem;
+        width: 1.5rem;
+        fill: $svg-Color;
+      }
+      &-input {
+        position: absolute;
+        right: 2rem;
+        border: none;
+        height: 3rem;
+        color: inherit;
+        background: $mainbody-Color;
+        &::placeholder {
+          font-size: 1.2rem;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+      &-extend {
+        position: absolute;
+        right: 0;
+        top: 5px;
+        width: 1rem;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        &-logo {
+          height: 1rem;
+          width: 1rem;
+          fill: $svg-Color;
+        }
+      }
+    }
+    .entities {
+      &-heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: $black-light;
+        padding: 0.5rem 0 0.5rem 0;
+        &-logo {
+          height: 2rem;
+          width: 2rem;
+          margin-left: 1rem;
+        }
+        &-text {
+          margin-left: 0.5rem;
+          font-size: 1.5rem;
+          font-weight: 400;
+        }
+        &-btn {
+          height: 2rem;
+          width: 2rem;
+          fill: $svg-Color;
+          cursor: pointer;
+        }
+      }
+      &-data {
+        width: 100%;
+        &-item {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          margin: 0.5rem 0 0.5rem 0;
+          &-logo {
+            height: 2rem;
+            width: 2rem;
+            margin: 0 1rem 0 1rem;
+          }
+          &-right {
+            height: 1rem;
+            width: 1rem;
+            fill: rgb(3, 117, 247);
+          }
+          &-left {
+            height: 1rem;
+            width: 1rem;
+            fill: rgb(3, 117, 247);
+          }
+          &-txt {
+            margin-left: 1rem;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+    .summary {
+      &-heading {
+        display: flex;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        background: $black-light;
+        padding: 0.5rem 0 0.5rem 0;
+        justify-content: space-between;
+        &-logo {
+          height: 2rem;
+          width: 2rem;
+          fill: $svg-Color;
+          margin-left: 1rem;
+        }
+        &-text {
+          margin-left: 0.5rem;
+          font-size: 1.5rem;
+          font-weight: 400;
+        }
+      }
+      &-item {
+        margin-left: 1rem;
+
+        &-heading {
+          font-weight: 300;
+          font-size: 1.2rem;
+        }
+        &-data {
+          margin-left: 1.3rem;
+          position: relative;
+          &::after {
+            position: absolute;
+            content: "";
+            width: 10rem;
+            height: 3px;
+            top: 0.6rem;
+            left: 6rem;
+            background: rgb(68, 68, 241);
+          }
+        }
+      }
+    }
+  }
+  .main {
+    width: 65vw;
+    background: $mainbody-Color;
+    height: 95vh;
+    .about-case {
+      border-left: 6px solid orange;
+      height: 8.6vh;
+      background: $sidebar-Color;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      &-img {
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+      }
+      &-person {
+        display: flex;
+        flex-direction: column;
+        width: 10rem;
+      }
+      &-name {
+        text-decoration: none;
+        color: $text-Color;
+      }
+      &-assign {
+        text-decoration: none;
+      }
+      &-btn {
+        &-svg {
+          height: 2rem;
+          width: 2rem;
+          fill: $svg-Color;
+        }
+      }
+      &-titletag {
+        display: flex;
+        flex-direction: column;
+      }
+      &-title {
+      }
+      &-tags {
+        text-decoration: none;
+        color: #f6f6f663;
+      }
+      &-info {
+      }
+      &-adddis {
+        border: none;
+        background-color: transparent;
+        color: #f6f6f657;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+    }
+    .case-nav {
+      display: flex;
+
+      .case-nav-item {
+        text-decoration: none;
+        color: #f9f9f94d;
+        margin: 0.5rem 1rem 0.5rem 1rem;
+        &:nth-child(1) {
+          border-bottom: 2px solid $text-Color;
+        }
+      }
+    }
+    .alerts {
+      &-heading {
+        display: flex;
+        align-items: center;
+        &-text {
+          font-size: 1.3rem;
+          font-weight: 400;
+        }
+        &-svg {
+          height: 1.5rem;
+          width: 1.5rem;
+          fill: $svg-Color;
+          margin: 0 1rem 0 1rem;
+        }
+      }
+      .alerts-container {
+        display: flex;
+        align-items: center;
+        height: 10vh;
+        margin: 0 1rem 0 0.8rem;
+        .alerts-item {
+          width: 15rem;
+          height: 9vh;
+          color: $text-Color;
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          justify-content: space-evenly;
+          margin: 0 0 0 1rem;
+          background-color: $alertitem-Color;
+          padding-left: 0.5rem;
+          &-heading {
+            font-size: 1.2rem;
+            font-weight: 600;
+          }
+          &-time {
+            font-size: 1rem;
+            font-weight: 300;
+          }
+          &-events {
+          }
+          &-svg {
+            height: 1.5rem;
+            width: 1.5rem;
+            position: absolute;
+            right: 1rem;
+            bottom: 1rem;
+            cursor: pointer;
+          }
+        }
+      }
+      &-graph {
+        height: 9.5vh;
+        background: #111;
+        position: relative;
+        margin: 0 1.5rem 0 1.5rem;
+
+        &-date {
+          position: absolute;
+          bottom: 0.4rem;
+          color: #f6f6f673;
+          margin-left: 1rem;
+          font-size: 0.8rem;
+        }
+        &-day {
+          position: absolute;
+          top: 2.5rem;
+          right: 5rem;
+          width: 80%;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          border-top: 1px solid #333;
+          color: #f6f6f673;
+        }
+      }
+    }
+    .insight {
+      margin-top: 0.5rem;
+      &-heading {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.3rem;
+        &-title {
+          font-size: 1.3rem;
+          font-weight: 400;
+        }
+        &-filter {
+          position: absolute;
+          right: 1rem;
+          &-svg {
+            height: 1rem;
+            width: 1rem;
+            fill: $svg-Color;
+            margin-left: 0.5rem;
+          }
+        }
+        &-svg {
+          margin: 0 1rem 0 0.5rem;
+          height: 1.7rem;
+          width: 1.7rem;
+          fill: $svg-Color;
+        }
+      }
+      .container {
+        height: 19vh;
+        display: flex;
+        align-items: center;
+        margin: 0 1rem 0 1rem;
+        &-item {
+          height: 18vh;
+          width: 16vw;
+          background: #111;
+          overflow-y: scroll;
+          &::-webkit-scrollbar {
+            display: none;
+            scroll-behavior: smooth;
+          }
+
+          margin: 0 0.5rem 0 0.5rem;
+          &-heading {
+            display: flex;
+            align-items: center;
+            position: relative;
+            border-bottom: 1px solid #333;
+            padding-bottom: 0.5rem;
+            &-title {
+              font-size: 1rem;
+            }
+            &-svg {
+              margin: 0 0.5rem 0 0.5rem;
+              height: 1rem;
+              width: 1rem;
+              fill: #999;
+            }
+            &-svg2 {
+              position: absolute;
+              right: 0;
+            }
+          }
+          &-data {
+            color: #f6f6f66e;
+            &-title {
+              display: flex;
+              align-items: center;
+              margin-top: 0.3rem;
+              &-logo {
+                height: 1.5rem;
+                width: 1.5rem;
+                margin: 0 0.5rem 0 0.5rem;
+              }
+              &-txt {
+                font-size: 0.9rem;
+              }
+            }
+            &-txt {
+              color: #f6f6f683;
+            }
+          }
+        }
+      }
+    }
+    .playbook {
+      margin: 0 1.5rem 0 1.5rem;
+      height: 25vh;
+      background: #191919;
+      margin-top: 4rem;
+      position: relative;
+      &-heading {
+        display: flex;
+        align-items: center;
+        &-logo {
+          height: 2rem;
+          width: 2rem;
+          margin: 0 1rem 0 0.5rem;
+        }
+        &-title {
+          font-size: 1.2rem;
+        }
+      }
+      &-data {
+        &-txt {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: #f9f9f93d;
+        }
+      }
+    }
+  }
+}
+.rotate {
+  transform: rotate(90deg);
+}
+.mark-red {
+  background-color: rgb(153, 0, 0);
+  border-radius: 50%;
+}
+.border-red {
+  border-left: 3px solid red !important;
+}
+.flex-row {
+  display: flex;
+}
+.margin-bottom-red {
+  border-bottom: 2px solid rgb(221, 0, 0);
+}
+.alert-graph-djs {
+  position: absolute;
+  top: -1rem;
+  left: 30%;
+}
